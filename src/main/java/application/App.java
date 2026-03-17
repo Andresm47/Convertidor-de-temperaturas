@@ -17,10 +17,13 @@ public class App extends Application {
         }
 
     @Override
+//Se da inicio a la aplicación, se carga el archivo FXML que contiene la interfaz gráfica y se muestra en la ventana principal.
     public void start(Stage stage) throws Exception {
-
+// Se carga el archivo FXML que contiene la interfaz gráfica y se muestra en la ventana principal.
         AnchorPane load = FXMLLoader.load(getClass().getResource(paths.PANTALLA_INICIAL));
+// Se carga la escena que es donde se encuentran todos los campos que vamos a usar
         Scene scene = new Scene(load);
+// Se establece el título de la ventana principal y se muestra la escena.
         stage.setTitle("Conversor de unidades");
         stage.setScene(scene);
         stage.show();
