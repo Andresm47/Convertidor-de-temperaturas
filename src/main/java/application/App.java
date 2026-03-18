@@ -13,7 +13,7 @@ public class App extends Application {
 
 //Se inicia la el código para ejecutan la pantalla que vamos a mostrar graficamente
         public static void main(String[] args) {
-            launch();
+            launch(args);
         }
 
     @Override
