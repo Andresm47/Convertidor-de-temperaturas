@@ -1,6 +1,7 @@
 package application;
 
 public class Operaciones {
+//Formulas para temperaturas
 // Se definen métodos estáticos para realizar las conversiones de temperatura entre Celsius, Fahrenheit y Kelvin.
     public static double CelsiusAFahrenheit(double grados) {
 // Se utiliza la fórmula de conversión de Celsius a Fahrenheit: (grados * 9/5) + 32.
@@ -23,3 +24,6 @@ public class Operaciones {
         return (grados - 273.15) * 9.0 / 5.0 + 32;
     }
 }
+
+//Formulas para medidas
+  // public static double MetrosAPies(double metros) { return metros * 0.0254; }
