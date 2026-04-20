@@ -7,6 +7,10 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.collections.FXCollections;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.Scene;
 
 public class Pantalla_inicialController {
 // Se definen los campos de texto y el área de texto que se utilizarán en la interfaz gráfica,
@@ -36,6 +40,11 @@ public class Pantalla_inicialController {
             double grados = Double.parseDouble(campoGrados.getText());
 // Se utiliza gradeslist.getValue para que el programa pueda reconocer lo que se selecciona en el combo box
             String unidad = gradeslist.getValue();
+            if (unidad == null) {
+                lblmensaje.setText("Por favor, selecciona una unidad de temperatura.");
+                return;
+            }
+
             if (unidad.equals("°C")) {
                 // Primera operación: Convertir a Fahrenheit
                 double fahrenheit = Operaciones.CelsiusAFahrenheit(grados);
@@ -66,5 +75,27 @@ public class Pantalla_inicialController {
             lblmensaje.setText("Por favor, ingresa un número válido para los grados.");
         }
     }
+
+    @FXML
+    public void regresar(javafx.event.ActionEvent event) {
+        try {
+            // Cerrar la ventana actual
+            Stage currentStage = (Stage) ((javafx.scene.control.Button) event.getSource()).getScene().getWindow();
+            currentStage.close();
+
+            // Abrir el menú inicial
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Menu_Inicial.fxml"));
+            Stage menuStage = new Stage();
+            AnchorPane root = fxmlLoader.load();
+            Scene scene = new Scene(root);
+
+            menuStage.setScene(scene);
+            menuStage.setTitle("Conversor de unidades");
+            menuStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

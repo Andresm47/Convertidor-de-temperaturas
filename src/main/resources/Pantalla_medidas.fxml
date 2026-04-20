@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Medidas">
+   <children>
+      <Label layoutX="163.0" layoutY="92.0" text="Unidad inicial" />
+      <ComboBox fx:id="unidad" layoutX="149.0" layoutY="109.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button layoutX="386.0" layoutY="88.0" mnemonicParsing="false" onAction="#click" text="Convertir" />
+      <TextField fx:id="valor" layoutX="149.0" layoutY="61.0" />
+      <Label layoutX="163.0" layoutY="44.0" prefHeight="17.0" prefWidth="91.0" text="Inserta un valor" />
+      <TextArea fx:id="lblfinal" layoutX="149.0" layoutY="259.0" prefHeight="104.0" prefWidth="302.0" />
+      <ComboBox fx:id="unidad2" layoutX="149.0" layoutY="175.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="163.0" layoutY="158.0" text="Unidad final" />
+      <Button layoutX="478.0" layoutY="338.0" mnemonicParsing="false" onAction="#menu" text="Atrás" />
+   </children>
+</AnchorPane>

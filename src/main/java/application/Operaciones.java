@@ -23,7 +23,15 @@ public class Operaciones {
     public static double KelvinAFahrenheit(double grados) {
         return (grados - 273.15) * 9.0 / 5.0 + 32;
     }
+    //Formulas para medidas
+    public static double MetrosAPies(double metros) { return metros * 0.0254; }
+    public static double PiesAMetros(double pies) { return pies / 0.0254; }
+    public static double kilometrosAMillas(double kilometros) { return kilometros * 0.621371; }
+    public static double millasAKilometros(double millas) { return millas / 0.621371; }
+    public static double metrosAKilometros(double metros) { return metros / 1000.0; }
+    public static double kilometrosAMetros(double kilometros) { return kilometros * 1000.0; }
+    public static double gramosALibras(double gramos) { return gramos * 0.00220462; }
+    public static double librasAGramos(double libras) { return libras / 0.00220462; }
 }
 
-//Formulas para medidas
-  // public static double MetrosAPies(double metros) { return metros * 0.0254; }
+
