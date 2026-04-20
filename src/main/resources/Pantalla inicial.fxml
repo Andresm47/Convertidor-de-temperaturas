@@ -9,7 +9,8 @@
       <Button layoutX="248.0" layoutY="117.0" mnemonicParsing="false" onAction="#click" text="Convertir" />
       <TextField fx:id="campoGrados" layoutX="68.0" layoutY="86.0" />
       <Label layoutX="68.0" layoutY="121.0" text="Unidad de Medida" />
-      <TextArea fx:id="lblmensaje" layoutX="68.0" layoutY="217.0" prefHeight="75.0" prefWidth="150.0" />
+      <TextArea fx:id="lblmensaje" layoutX="68.0" layoutY="217.0" prefHeight="75.0" prefWidth="227.0" />
       <ComboBox fx:id="gradeslist" layoutX="68.0" layoutY="143.0" prefWidth="150.0" />
+      <Button layoutX="248.0" layoutY="300.0" mnemonicParsing="false" onAction="#regresar" text="Atrás" />
    </children>
 </AnchorPane>

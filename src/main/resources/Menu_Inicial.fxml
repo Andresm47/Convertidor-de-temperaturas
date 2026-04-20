@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Menu_principalController">
+   <children>
+      <Button fx:id="tempe" layoutX="78.0" layoutY="64.0" mnemonicParsing="false" onAction="#clicktemp" prefHeight="44.0" prefWidth="114.0" text="Temperatura" />
+      <Button layoutX="384.0" layoutY="64.0" mnemonicParsing="false" onAction="#click" prefHeight="44.0" prefWidth="114.0" text="Longitud" />
+      <Label layoutX="168.0" layoutY="23.0" text="Escoge el tipo de medida que quieres transformar" />
+   </children>
+</AnchorPane>
